@@ -26,7 +26,6 @@ Este proyecto automatiza pruebas de QA sobre la página [saucedemo.com](https://
 ## Cómo ejecutar las pruebas
 
 Para correr todos los tests y generar un reporte HTML:
-
     ```bash
     pytest -v --html=reports/reporte.html
 
