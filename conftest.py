@@ -24,7 +24,7 @@ def driver():
 def pytest_runtest_makereport(item, call):
     """
     Hook de pytest: se ejecuta después de cada test.
-    Si el test falla, toma una captura de pantalla y la guarda en /screenshots.
+    Si el test falla, toma una captura de pantalla y la guarda en /reports.
     """
     outcome = yield
     report = outcome.get_result()
@@ -32,7 +32,7 @@ def pytest_runtest_makereport(item, call):
     if report.failed:
         driver = item.funcargs.get("driver")
         if driver:
-            os.makedirs("screenshots", exist_ok=True)
-            screenshot_path = f"screenshots/{item.name}.png"
+            os.makedirs("reports", exist_ok=True)
+            screenshot_path = f"reports/{item.name}.png"
             driver.save_screenshot(screenshot_path)
             print(f"\n📸 Captura guardada en: {screenshot_path}")
