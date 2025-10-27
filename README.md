@@ -26,7 +26,7 @@ Este proyecto automatiza pruebas de QA sobre la página [saucedemo.com](https://
 
 ```bash
 pytest -v --html=reports/reporte.html
-
+```
 
 Los tests se ejecutan de manera independiente.
 
