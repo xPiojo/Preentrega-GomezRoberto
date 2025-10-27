@@ -26,15 +26,15 @@ Este proyecto automatiza pruebas de QA sobre la página [saucedemo.com](https://
 ## Cómo ejecutar las pruebas
 
 Para correr todos los tests y generar un reporte HTML:
-
-pytest -v --html=reports/reporte.html
+    ```bash
+    pytest -v --html=reports/reporte.html
 
 
 Los tests se ejecutan de manera independiente.
 
 Se utilizan fixtures para manejar el navegador y capturas automáticas de fallos.
 
-Estructura del proyecto
+## Estructura del proyecto
 
 tests/ → Contiene todos los tests automatizados.
 
