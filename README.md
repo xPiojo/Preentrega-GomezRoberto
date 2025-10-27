@@ -34,11 +34,15 @@ Se utilizan fixtures para manejar el navegador y capturas automáticas de fallos
 
 ## Estructura del proyecto
 
-tests/ → Contiene todos los tests automatizados.
+- tests/ → Contiene todos los tests automatizados.
 
-reports/ → Reportes HTML y capturas de pantalla en caso de fallos.
+- reports/ → Reportes HTML y capturas de pantalla en caso de fallos.
 
-conftest.py → Fixture de pytest y hooks para screenshots automáticos.
+- conftest.py → Fixture de pytest y hooks para screenshots automáticos.
+
+- requirements.txt → Lista de dependencias necesarias para ejecutar el proyecto.
+
+- README.md → Documentación del proyecto, instrucciones de instalación y ejecución.
 
 ## Evidencias adicionales
 
