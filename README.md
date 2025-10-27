@@ -20,12 +20,11 @@ Este proyecto automatiza pruebas de QA sobre la página [saucedemo.com](https://
 2. Instalar dependencias:
 
     ```bash
-    Copiar código
     pip install -r requirements.txt
 
 ## Cómo ejecutar las pruebas
-
 Para correr todos los tests y generar un reporte HTML:
+
     ```bash
     pytest -v --html=reports/reporte.html
 
